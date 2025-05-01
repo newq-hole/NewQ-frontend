@@ -98,94 +98,54 @@
 /* 针对 AI 评论内部的元素在深色模式下进行样式修改，例如作者名称 */
 .flow-reply.ai-gemini.box .box-header-name.author-title {
   background: #1a73e8; /* 深一点的 Google Blue (亮色模式) */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .flow-reply.ai-openai.box .box-header-name.author-title {
   background: #0e7f64; /* 深一点的 OpenAI Green (亮色模式) */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .flow-reply.ai-grok.box .box-header-name.author-title {
   background: #cc3d00; /* 深一点的 Grok Orange (亮色模式) */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .flow-reply.ai-deepseek.box .box-header-name.author-title {
   background: #008f54; /* 深一点的 DeepSeek Green (亮色模式) */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .flow-reply.ai-assistant.box .box-header-name.author-title {
   background: #5a5a5a; /* 深一点的灰色 (亮色模式) */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 
 /* 针对 AI 评论内部的元素在深色模式下进行样式修改，例如作者名称 */
 .dark-mode .flow-reply.ai-gemini.box .box-header-name.author-title {
   background: #8ab4f8; /* 深色模式下更亮的 Google Blue */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .dark-mode .flow-reply.ai-openai.box .box-header-name.author-title {
   background: #64d2b9; /* 深色模式下更亮的 OpenAI Green */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .dark-mode .flow-reply.ai-grok.box .box-header-name.author-title {
   background: #ff8c5a; /* 深色模式下更亮的 Grok Orange */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .dark-mode .flow-reply.ai-deepseek.box .box-header-name.author-title {
   background: #39e6a1; /* 深色模式下更亮的 DeepSeek Green */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 .dark-mode .flow-reply.ai-assistant.box .box-header-name.author-title {
   background: #cccccc; /* 深色模式下更亮的灰色 */
-  font-weight: bold;
-  /* 添加样式重置 */
-  display: unset;
-  margin: unset;
-  padding: unset;
+
 }
 
 /* 如果您希望在 AI 评论旁边添加图标，可以在 Reply 组件的 HTML 结构中添加一个元素，并在这里定义其样式 */
