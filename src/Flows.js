@@ -26,7 +26,6 @@ const IMAGE_BAK_BASE = 'https://img2.thuhole.com/';
 
 const CLICKABLE_TAGS = { a: true, audio: true, button: true };
 const PREVIEW_REPLY_COUNT = 10;
-// const QUOTE_BLACKLIST=['23333','233333','66666','666666','10086','10000','100000','99999','999999','55555','555555'];
 const QUOTE_BLACKLIST = [];
 
 window.LATEST_POST_ID = parseInt(localStorage['_LATEST_POST_ID'], 10) || 0;
@@ -114,12 +113,41 @@ class Reply extends PureComponent {
     const author = info.name,
       replyText = info.text;
     this.color_picker = new ColorPicker();
+    // 根据 author_hash 添加不同的 CSS 类
+    let aiClass = '';
+    let isAIComment = false; // 是否为 AI 评论
+    switch (info.author_title) {
+      case "Gemini":
+        aiClass = ' ai-gemini'; // 为 Gemini AI 添加类
+        isAIComment = true;
+        break;
+      case "OpenAI":
+        aiClass = ' ai-openai'; // 为 OpenAI AI 添加类
+        isAIComment = true;
+        break;
+      case "Grok":
+        aiClass = ' ai-grok'; // 为 Grok AI 添加类
+        isAIComment = true;
+        break;
+      case "DeepSeek":
+        aiClass = ' ai-deepseek'; // 为 DeepSeek AI 添加类
+        isAIComment = true;
+      break;
+      case "AI": // 默认 AI 的哈希
+        aiClass = ' ai-assistant'; // 为默认 AI 添加类
+        isAIComment = true;
+        break;
+      default:
+        aiClass = ''; // 非 AI 评论没有特殊类
+        isAIComment = false;
+    }
+
     return (
       !check_block(info) && (
         <div
-          className={'flow-reply box'}
+          className={'flow-reply box' + aiClass}
           style={
-            info._display_color
+            !isAIComment && info._display_color // 添加 !isAIComment 条件
               ? {
                   '--box-bgcolor-light': info._display_color[0],
                   '--box-bgcolor-dark': info._display_color[1],
@@ -139,7 +167,7 @@ class Reply extends PureComponent {
               </span>
             )}
             &nbsp;
-            {<span className="box-header-name">{info.name}</span>}
+            {!isAIComment && <span className="box-header-name">{info.name}</span>}
             {info.author_title && (
               <span className="box-header-name author-title">{`"${info.author_title}"`}</span>
             )}

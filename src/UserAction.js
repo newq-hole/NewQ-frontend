@@ -466,7 +466,13 @@ export class ReplyForm extends Component {
       text: text,
       use_title: use_title ? '1' : '',
     });
-    fetch(`${get_api_base_2()}/post/${pid}/comment`, {
+    // Check if the text content includes "@AI_Assistant"
+    const endpoints = ['@gemini', '@openai', '@grok','@deepseek','@search'];
+    const apiEndpoint = endpoints.some(endpoint => text.includes(endpoint))
+      ? `${get_api_base_2()}/post/${pid}/comment/ai`
+      : `${get_api_base_2()}/post/${pid}/comment/`;
+
+    fetch(apiEndpoint, { // Use the dynamically determined API endpoint
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',

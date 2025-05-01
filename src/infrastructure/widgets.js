@@ -173,8 +173,15 @@ class LoginPopupSelf extends Component {
               <span className="icon icon-login" />
               &nbsp;GitHub
             </a>
+            <br></br>
+            <a href={window.BACKEND + "_login/gh_cn"} target="_blank"
+              referrerPolicy="origin"
+            >
+              <span className="icon icon-login" />
+              &nbsp;GitHub(CN)
+            </a>
             <br/ >
-            <small>(请先添加清华邮箱/校友邮箱)</small>
+            <small>(请先添加北大邮箱/清华邮箱/校友邮箱)</small>
           </p>
           {/* <p>
             <a href={window.BACKEND + "_login?p=cs"} target="_blank"

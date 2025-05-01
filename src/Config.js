@@ -4,25 +4,32 @@ import './Config.css';
 
 const BUILTIN_IMGS = {
   'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/gbp.jpg':
-    '怀旧背景（默认）',
-  'https://www.tsinghua.edu.cn/image/nav-bg.jpg': '清华紫',
-  'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/eriri.jpg':
-    '平成著名画师',
-  'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/yurucamp.jpg':
-    '露营天下第一',
-  'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/minecraft.jpg':
-    '麦恩·库拉夫特',
-  'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/cyberpunk.jpg':
-    '赛博城市',
+    '怀旧）',
   'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/bj.jpg':
-    '城市的星光',
-  'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/sif.jpg':
-    '梦开始的地方',
-};
+    '城市',
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/hello.jpg':
+    '欢迎' ,
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/dark.jpg':
+    '黑色',
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/peaks.jpg':
+    '登峰',
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/night.jpg':
+    '静夜',  
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/Neon.jpg':
+    '霓虹',
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/circuitry.jpg':
+    '电路',  
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/loop.jpg':
+    '循环',        
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/pattern.jpg':
+    '模版',
+  'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/wave.jpg':
+    '波浪',
+  };
 
 const DEFAULT_CONFIG = {
   background_img:
-    'https://cdn.jsdelivr.net/gh/thuhole/webhole@gh-pages/static/bg/gbp.jpg',
+    'https://cdn.jsdelivr.net/gh/newq-hole/NewQ-frontend@v1.0/public/static/bg/hello.jpg',
   background_color: '#113366',
   pressure: false,
   easter_egg: true,

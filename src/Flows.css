@@ -1,3 +1,204 @@
+.flow-reply.ai-gemini,
+.flow-reply.ai-openai,
+.flow-reply.ai-grok,
+.flow-reply.ai-deepseek,
+.flow-reply.ai-assistant {
+    border-left: 5px solid; /* 添加一个左边框 */
+    /* 可以添加其他通用样式，例如背景色 */
+    /* background-color: #f0f0f0; */
+}
+/* 评论框的默认样式，确保有一个非透明的背景 */
+.flow-reply.box {
+  /* 确保这里有一个默认的背景颜色，或者它继承了一个非透明的背景 */
+  background-color: var(--box-bgcolor-light, #ffffff); /* 示例：使用一个默认的白色背景，或者使用 CSS 变量（如果定义了） */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 示例阴影 */
+  /*border-radius: 8px; /* 示例圆角 */
+  /*padding: 15px; /* 示例内边距 */
+  /*margin-bottom: 15px; 示例底部外边距 */
+  /* ... 其他默认样式 ... */
+}
+
+/* AI 评论的通用样式 (在亮色和深色模式下都适用) */
+.flow-reply.ai-gemini,
+.flow-reply.ai-openai,
+.flow-reply.ai-grok,
+.flow-reply.ai-deepseek,
+.flow-reply.ai-assistant {
+  border-left: 5px solid; /* 保留左边框作为区分 */
+  /* 可以添加其他通用样式 */
+}
+
+/* 针对不同 AI 的特定样式 (亮色模式) */
+.flow-reply.ai-gemini.box {
+  border-left-color: #4285F4; /* Google Blue */
+  background-color: #e8f0fe; /* 浅蓝色背景 */
+  color: #202124; /* 亮色模式下的文字颜色，确保可读性 */
+}
+
+.flow-reply.ai-openai.box {
+  border-left-color: #10a37f; /* OpenAI Green */
+  background-color: #d4ede5; /* 浅绿色背景 */
+  color: #202124; /* 亮色模式下的文字颜色 */
+}
+
+.flow-reply.ai-grok.box {
+  border-left-color: #ff4e00; /* Grok Orange (示例颜色) */
+  background-color: #ffe5d6; /* 浅橙色背景 */
+  color: #202124; /* 亮色模式下的文字颜色 */
+}
+
+.flow-reply.ai-deepseek.box {
+  border-left-color: #00b96c; /* DeepSeek Green (示例颜色) */
+  background-color: #d6f5e9; /* 另一种浅绿色背景 */
+  color: #202124; /* 亮色模式下的文字颜色 */
+}
+
+.flow-reply.ai-assistant.box {
+  border-left-color: #6a6a6a; /* 默认 AI 的颜色 */
+  background-color: #f5f5f5; /* 浅灰色背景 */
+  color: #202124; /* 亮色模式下的文字颜色 */
+}
+
+/* 针对不同 AI 的特定样式 (深色模式) */
+/* 假设深色模式是通过在父元素上添加 .dark-mode 类来实现的 */
+.dark-mode .flow-reply.ai-gemini.box {
+  border-left-color: #4285F4; /* 可以保持边框颜色不变 */
+  background-color: #1a2b3c; /* 深色模式下的背景色示例 */
+  color: #e8f0fe; /* 深色模式下的文字颜色，确保可读性 */
+}
+
+.dark-mode .flow-reply.ai-openai.box {
+  border-left-color: #10a37f;
+  background-color: #123430; /* 深色模式下的背景色示例 */
+  color: #d4ede5; /* 深色模式下的文字颜色 */
+}
+
+.dark-mode .flow-reply.ai-grok.box {
+  border-left-color: #ff4e00;
+  background-color: #4a2000; /* 深色模式下的背景色示例 */
+  color: #ffe5d6; /* 深色模式下的文字颜色 */
+}
+
+.dark-mode .flow-reply.ai-deepseek.box {
+  border-left-color: #00b96c;
+  background-color: #003d26; /* 深色模式下的背景色示例 */
+  color: #d6f5e9; /* 深色模式下的文字颜色 */
+}
+
+.dark-mode .flow-reply.ai-assistant.box {
+  border-left-color: #6a6a6a;
+  background-color: #333333; /* 深色模式下的背景色示例 */
+  color: #f5f5f5; /* 深色模式下的文字颜色 */
+}
+
+
+/* ... 为其他 AI 添加类似的作者名称样式 ... */
+
+
+/* 针对 AI 评论内部的元素在深色模式下进行样式修改，例如作者名称 */
+.flow-reply.ai-gemini.box .box-header-name.author-title {
+  background: #1a73e8; /* 深一点的 Google Blue (亮色模式) */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.flow-reply.ai-openai.box .box-header-name.author-title {
+  background: #0e7f64; /* 深一点的 OpenAI Green (亮色模式) */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.flow-reply.ai-grok.box .box-header-name.author-title {
+  background: #cc3d00; /* 深一点的 Grok Orange (亮色模式) */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.flow-reply.ai-deepseek.box .box-header-name.author-title {
+  background: #008f54; /* 深一点的 DeepSeek Green (亮色模式) */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.flow-reply.ai-assistant.box .box-header-name.author-title {
+  background: #5a5a5a; /* 深一点的灰色 (亮色模式) */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+
+/* 针对 AI 评论内部的元素在深色模式下进行样式修改，例如作者名称 */
+.dark-mode .flow-reply.ai-gemini.box .box-header-name.author-title {
+  background: #8ab4f8; /* 深色模式下更亮的 Google Blue */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.dark-mode .flow-reply.ai-openai.box .box-header-name.author-title {
+  background: #64d2b9; /* 深色模式下更亮的 OpenAI Green */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.dark-mode .flow-reply.ai-grok.box .box-header-name.author-title {
+  background: #ff8c5a; /* 深色模式下更亮的 Grok Orange */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.dark-mode .flow-reply.ai-deepseek.box .box-header-name.author-title {
+  background: #39e6a1; /* 深色模式下更亮的 DeepSeek Green */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+.dark-mode .flow-reply.ai-assistant.box .box-header-name.author-title {
+  background: #cccccc; /* 深色模式下更亮的灰色 */
+  font-weight: bold;
+  /* 添加样式重置 */
+  display: unset;
+  margin: unset;
+  padding: unset;
+}
+
+/* 如果您希望在 AI 评论旁边添加图标，可以在 Reply 组件的 HTML 结构中添加一个元素，并在这里定义其样式 */
+/* 例如，在 .box-header 中添加一个 <span className="ai-icon"></span> */
+/*
+.dark-mode .flow-reply.ai-gemini .ai-icon {
+  // Gemini 图标样式 (深色模式)
+}
+*/
+
+/* ... 其他现有的样式 ... */
+
+
 :root {
   --box-bgcolor-light: hsl(0, 0%, 97%);
   --box-bgcolor-dark: hsl(0, 0%, 16%);
