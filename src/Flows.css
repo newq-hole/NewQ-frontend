@@ -1,8 +1,4 @@
-.flow-reply.ai-gemini,
-.flow-reply.ai-openai,
-.flow-reply.ai-grok,
-.flow-reply.ai-deepseek,
-.flow-reply.ai-assistant {
+.box {
     border-left: 5px solid; /* 添加一个左边框 */
     /* 可以添加其他通用样式，例如背景色 */
     /* background-color: #f0f0f0; */
